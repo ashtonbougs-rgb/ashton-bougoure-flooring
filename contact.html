@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Ashton Bougoure Flooring | Sunshine Coast</title>
+  <meta name="description" content="Get a flooring quote from Ashton Bougoure. Phone 0480 260 769 · ashtonbougs@gmail.com · Sunshine Coast, QLD.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="favicon.svg" width="40" height="40" alt="">
+        <span class="brand-text">
+          <span class="brand-name">Ashton Bougoure</span>
+          <span class="brand-tag">Residential &amp; Commercial Flooring</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>Call, email, or send a quick quote request. Residential and commercial.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="label">Phone</span>
+            <a href="tel:+61480260769">0480 260 769</a>
+          </div>
+          <div class="contact-item">
+            <span class="label">Email</span>
+            <a href="mailto:ashtonbougs@gmail.com">ashtonbougs@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="label">Location</span>
+            <span>Sunshine Coast, QLD</span>
+          </div>
+          <div class="contact-item">
+            <span class="label">Areas</span>
+            <span>Sunshine Coast · Moreton Bay · Brisbane north</span>
+          </div>
+          <div class="contact-item">
+            <span class="label">ABN</span>
+            <span>62 159 576 448</span>
+          </div>
+          <div class="contact-item">
+            <span class="label">Insurance</span>
+            <span>Fully insured — $10M Public &amp; Product Liability</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="quote-form" action="mailto:ashtonbougs@gmail.com" method="get">
+          <h3>Request a quote</h3>
+          <p class="hint">Opens your email app with the details filled in. Nothing is stored on this site.</p>
+
+          <div class="form-row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="jobType">Job type</label>
+            <select id="jobType" name="jobType">
+              <option value="">Select…</option>
+              <option>Residential</option>
+              <option>Commercial</option>
+              <option>Labour contracting</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="suburb">Suburb / area</label>
+            <input id="suburb" name="suburb" type="text" placeholder="e.g. Twin Waters" required>
+          </div>
+          <div class="form-row">
+            <label for="message">What do you need?</label>
+            <textarea id="message" name="message" placeholder="Floor type, approx m², pull-up needed, timing…" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Open email to send</button>
+          <p class="form-note">Or call <a href="tel:+61480260769">0480 260 769</a> / email <a href="mailto:ashtonbougs@gmail.com">ashtonbougs@gmail.com</a> direct.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Business</h3>
+          <p><strong style="color:#fff">Ashton Bougoure Commercial Flooring</strong></p>
+          <p class="temp-name-note">Trading name TBD — listed under Ashton’s name for now.</p>
+          <p>Residential &amp; commercial flooring</p>
+          <p>Sunshine Coast, QLD</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p><a href="tel:+61480260769">0480 260 769</a></p>
+          <p><a href="mailto:ashtonbougs@gmail.com">ashtonbougs@gmail.com</a></p>
+          <p>ABN 62 159 576 448</p>
+        </div>
+        <div>
+          <h3>Cover</h3>
+          <p>Fully insured</p>
+          <p>$10M Public &amp; Product Liability</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="y"></span> Ashton Bougoure</span>
+        <span>Sunshine Coast · Moreton Bay · Brisbane north</span>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="site.js"></script>
+</body>
+</html>
